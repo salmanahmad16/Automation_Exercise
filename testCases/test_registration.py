@@ -6,8 +6,8 @@ from pageObjects.registrationPage import RegistrationPage
 
 class Test_Case_001_Registration:
     baseUrl = 'http://automationexercise.com'
-    name = "salman"
-    email_address = "salman@leo.com"
+    name = "salman3"
+    email_address = "salman@leo7.com"
 
     def test_registration(self, setup):
         self.driver = setup
@@ -23,7 +23,7 @@ class Test_Case_001_Registration:
         time.sleep(2)
         assert "ENTER ACCOUNT INFORMATION" in self.regPage.getEnterAccountInformationText()
         self.regPage.selectGender()
-        self.regPage.enterNewUserName("Lion")
+        self.regPage.enterNewUserName("Lion6")
         self.regPage.enterNewUserPassword("123456")
         self.regPage.selectDOB()
         self.regPage.checkNewsLetter()
