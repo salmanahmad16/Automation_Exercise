@@ -47,3 +47,37 @@ class LoginPage(BaseMethods):
     def getAccountStatus(self):
         text = self.base.get_text(self.text_account_status)
         return text
+
+
+class InvalidLoginPage(BaseMethods):
+    hyper_link_signin = (By.LINK_TEXT, 'Signup / Login')
+    text_login_account_text = (By.CSS_SELECTOR, 'div.login-form>h2')
+    input_login_email = (By.CSS_SELECTOR, 'form[action="/login"] input[name="email"]')
+    input_login_password = (By.CSS_SELECTOR, 'form[action="/login"] input[name="password"]')
+    button_login = (By.CSS_SELECTOR, 'button[data-qa="login-button"]')
+    text_error_message = (By.CSS_SELECTOR, 'form[action="/login"]>p')
+
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.driver = driver
+        self.base = BaseMethods(self.driver)
+
+    def clickSigninHyperLink(self):
+        self.base.click(self.hyper_link_signin)
+
+    def getLoginIntoAccountText(self):
+        text = self.base.get_text(self.text_login_account_text)
+        return text
+
+    def enterInvalidLoginEmail(self, email):
+        self.base.send_values(self.input_login_email, email)
+
+    def enterInvalidLoginPassword(self, password):
+        self.base.send_values(self.input_login_password, password)
+
+    def clickLoginButton(self):
+        self.base.click(self.button_login)
+
+    def getErrorMessageText(self):
+        text = self.base.get_text(self.text_error_message)
+        return text

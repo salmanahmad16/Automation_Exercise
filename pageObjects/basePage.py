@@ -32,8 +32,8 @@ class BaseMethods:
         return WebDriverWait(self.driver, 15).until(
             EC.visibility_of_element_located(locator)).text
 
-    def get_all_elements(self, locator):
-        try:
-            return self.driver.find_elements_by_class_name(locator)
-        except:
-            return self.driver.find_elements_by_css_selector(locator)
+    # def get_all_elements(self, locator):
+    #     try:
+    #         return self.driver.find_elements(locator)
+    #     except:
+    #         return self.driver.find_elements(locator)
