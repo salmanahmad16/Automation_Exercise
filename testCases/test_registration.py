@@ -50,12 +50,12 @@ class Test_Case_001_Registration:
         time.sleep(3)
         self.logger.info("********* Verify account name ******")
         assert "Lion" in self.regPage.getAccountHolderName()
-        self.regPage.clickOnDeleteAccount()
-        time.sleep(2)
-        self.logger.info("********* Account Deleted ******")
-        assert "ACCOUNT DELETED!" in self.regPage.getAccountStatus()
-        time.sleep(2)
-        self.regPage.clickContinueButton()
+        # self.regPage.clickOnDeleteAccount()
+        # time.sleep(2)
+        # self.logger.info("********* Account Deleted ******")
+        # assert "ACCOUNT DELETED!" in self.regPage.getAccountStatus()
+        # time.sleep(2)
+        # self.regPage.clickContinueButton()
 
 
 

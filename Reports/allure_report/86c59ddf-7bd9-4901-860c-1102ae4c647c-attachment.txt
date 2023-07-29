@@ -1,0 +1,2 @@
+[32mINFO    [0m utilities.customLogger:test_invalidLogin.py:21 ********* Test Case 000 Invalid User ******
+[32mINFO    [0m utilities.customLogger:test_invalidLogin.py:39 ********* Test Fail ******

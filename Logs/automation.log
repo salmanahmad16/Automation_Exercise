@@ -2,3 +2,18 @@
 07292023 01:0950 PM: INFO: ********* Account Created ******
 07292023 01:0953 PM: INFO: ********* Verify account name ******
 07292023 01:1010 PM: INFO: ********* Account Deleted ******
+07292023 05:1258 PM: INFO: ********* Test Case 000 Invalid User ******
+07292023 05:1321 PM: INFO: ********* Test Fail ******
+07292023 06:4138 PM: INFO: ********* Test Case 000 Invalid User ******
+07292023 06:4200 PM: INFO: ********* Test Fail ******
+07292023 06:4828 PM: INFO: ********* Test Case 001 User Registration ******
+07292023 06:4910 PM: INFO: ********* Account Created ******
+07292023 06:4920 PM: INFO: ********* Verify account name ******
+07292023 07:5209 PM: INFO: ********* Test Case 000 Data Driven Test For Valid User ******
+07292023 07:5344 PM: INFO: ********* Test Case 000 Data Driven Test For Valid User ******
+07292023 07:5406 PM: INFO: Test Is Pass
+07292023 07:5913 PM: INFO: ********* Test Case 000 Data Driven Test For Valid User ******
+07292023 07:5943 PM: INFO: Test Is Pass
+07292023 07:5954 PM: INFO: Test Is Pass
+07292023 08:0004 PM: INFO: Test Is Pass
+07292023 08:0014 PM: INFO: Test Is Pass

@@ -15,6 +15,7 @@ class LoginPage(BaseMethods):
     hyper_link_delete_account = (By.LINK_TEXT, 'Delete Account')
     text_account_holder_name = (By.CSS_SELECTOR, 'li>a>b')
     text_account_status = (By.CSS_SELECTOR, 'h2>b')
+    hyper_link_logout = (By.CSS_SELECTOR, 'a[href="/logout"]')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -40,6 +41,9 @@ class LoginPage(BaseMethods):
     def getAccountHolderName(self):
         text = self.base.get_text(self.text_account_holder_name)
         return text
+
+    def clickOnLogoutButton(self):
+        self.base.click(self.hyper_link_logout)
 
     def clickOnDeleteAccount(self):
         self.base.click(self.hyper_link_delete_account)
