@@ -2,10 +2,11 @@ import time
 import pytest
 from selenium import webdriver
 from pageObjects.addProductInCartPage import AddToCart
+from utilities.readProperties import ReadConfig
 
 
 class Test_Case_004_AddToCart:
-    baseUrl = 'http://automationexercise.com'
+    baseUrl = ReadConfig.getApplicationUrl()
 
     def test_addToCart(self, setup):
         self.driver = setup
